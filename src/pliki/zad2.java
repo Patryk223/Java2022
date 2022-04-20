@@ -17,14 +17,14 @@ public class zad2 {
         System.out.println("Plik wejściowy:");
         System.out.println(wejsciowy);
 
-        readText("wejsciowy.txt", "wyjsciowy.txt", "egzamin");
+        szukaj("wejsciowy.txt", "wyjsciowy.txt", "egzamin");
 
         scanner = new Scanner(new File("wyjsciowy.txt"), String.valueOf(StandardCharsets.UTF_8));
         wyjsciowy = scanner.useDelimiter("\\A").next();
         System.out.println("\nPlik wyjściowy:");
         System.out.println(wyjsciowy);
     }
-    public static void readText(String nazwaPlikWe, String nazwaPlikWy, String slowo) throws FileNotFoundException {
+    public static void szukaj(String nazwaPlikWe, String nazwaPlikWy, String slowo) throws FileNotFoundException {
         Scanner scan = new Scanner(new File(nazwaPlikWe));
         PrintWriter zapis = new PrintWriter(nazwaPlikWy);
         int licznik = 1;
