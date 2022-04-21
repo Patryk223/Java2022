@@ -17,7 +17,11 @@ public class zad2 {
         System.out.println("Plik wejściowy:");
         System.out.println(wejsciowy);
 
-        szukaj("wejsciowy.txt", "wyjsciowy.txt", "egzamin");
+        scanner = new Scanner(System.in);
+        System.out.print("\nPodaj słowo: ");
+        String slowo = scanner.next();
+
+        szukaj("wejsciowy.txt", "wyjsciowy.txt", slowo);
 
         scanner = new Scanner(new File("wyjsciowy.txt"), String.valueOf(StandardCharsets.UTF_8));
         wyjsciowy = scanner.useDelimiter("\\A").next();
