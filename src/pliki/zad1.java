@@ -14,7 +14,7 @@ public class zad1 {
         int word = 0;
 
         String content = null;
-        Scanner scanner = new Scanner(new File("plik.txt"), String.valueOf(StandardCharsets.UTF_8));
+        Scanner scanner = new Scanner(new File("wyjsciowy.txt"), String.valueOf(StandardCharsets.UTF_8));
         content = scanner.useDelimiter("\\A").next();
         System.out.println("Zawartość pliku:");
         System.out.println(content);
